@@ -30,6 +30,17 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<leader>pnu"] = {
+      function() require("package-info").update() end,
+      desc = "Update node package",
+    },
+    ["<leader>pns"] = {
+      function() require("package-info").show() end,
+      desc = "show node packages",
+    },
+    ["<leader>bf"] = {
+      function() vim.lsp.buf.format { async = false } end,
+    },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },

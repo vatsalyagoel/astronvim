@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "rose-pine-moon",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -52,6 +52,7 @@ return {
     servers = {
       -- "pyright"
     },
+    -- configure servers that you already have installed without mason
   },
 
   -- Configure require("lazy").setup() options
